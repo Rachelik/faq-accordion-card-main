@@ -1,0 +1,175 @@
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 921px;
+    border-radius: 24px;
+}
+
+h1 {
+    color: hsl(238, 29%, 16%);
+    font-size: 32px;
+    font-weight: 700;
+    margin: 17px 0 32px;
+}
+
+h2 {
+    color: hsl(238, 29%, 16%);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+p {
+    color: hsl(240, 6%, 50%);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+.left-card {
+    height: 510px;
+    width: 570px;
+    position: relative;
+    padding: 0px;
+}
+
+.wrapper {
+    height: inherit;
+    overflow: hidden;
+    position: relative;
+}
+
+.background1 {
+    position: absolute;
+    top: -295px;
+    left: -577px;
+}
+
+.background2 {
+    position: relative;
+    top: 70px;
+    left: -84px;
+}
+
+.background3 {
+    position: absolute;
+    top: 205px;
+    left: -93px;
+    /* z-index: 10; */
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    width: 349px;
+    cursor: pointer;
+}
+
+.questions {
+    padding: 50px 75px 76px 0px;
+}
+
+.dropdown-arrow {
+    padding: 15px;
+}
+
+.answer {
+    display: none;
+}
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:hover + label h2 {
+    color: hsl(14, 88%, 65%);
+}
+
+input[type=checkbox]:checked~div > .answer {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+input[type=checkbox]:checked + label .dropdown-arrow {
+    transform: rotate(0.5turn);
+}
+
+input[type=checkbox]:checked + label h2 {
+    font-weight: 700;
+    color: hsl(237, 12%, 33%);
+}
+
+hr {
+    border: solid hsl(240, 5%, 91%) 1px;
+    border-width: 1px 0 0;
+    margin: 6px 0 7px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    main {
+        flex-direction: column;
+        width: 327px;
+        margin-top: 60px;
+        box-shadow: 0px 35px 45px -10px hsla(238, 29%, 16%, 45%);
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 26px;
+    }
+
+    h2 {
+        font-size: 13px;
+    }
+
+    .left-card {
+        width: inherit;
+        height: 110px;
+        overflow: visible;
+    }
+    
+    .wrapper {
+        overflow: visible;
+        width: inherit;   
+    }
+
+    .background1 {
+        width: 74%;
+        top: -134px;
+        left: 42px;
+    }
+
+    .background2 {
+        width: 238px;
+        top: -108px;
+        left: 44px;
+
+    }
+
+    .background3 {
+        width: 97px;
+        top: -42px;
+        left: 38px;
+    }
+
+    .question {
+        width: 294px;
+    }
+
+    .questions {
+        padding: 0px 25px;
+        height: 424px;
+    }
+
+    
+}
